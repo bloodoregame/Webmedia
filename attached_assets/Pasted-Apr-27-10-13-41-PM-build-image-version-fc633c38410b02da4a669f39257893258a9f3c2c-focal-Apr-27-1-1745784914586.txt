@@ -1,0 +1,131 @@
+Apr 27, 10:13:41 PM: build-image version: fc633c38410b02da4a669f39257893258a9f3c2c (focal)
+Apr 27, 10:13:41 PM: devbot version: d29ceb94587893a3cbde782f8a409b5fb58bde6b
+Apr 27, 10:13:41 PM: Building without cache
+Apr 27, 10:13:41 PM: Starting to prepare your repo
+Apr 27, 10:13:41 PM: No cached dependencies found. Cloning fresh repo
+Apr 27, 10:13:41 PM: git clone --filter=blob:none https://github.com/bloodoregame/Webmedia
+Apr 27, 10:13:41 PM: Preparing Git Reference master
+Apr 27, 10:13:43 PM: 
+[93m​[39m
+[93mWarning: some redirects have syntax errors:[39m
+[93m​[39m
+[93mCould not parse redirect number 2:[39m
+[93m  {"from":"/.netlify/functions/*","to":"/.netlify/functions/:splat","status":200}[39m
+[93m"path" field must not start with "/.netlify"[39m
+Apr 27, 10:13:43 PM: Custom functions path detected. Proceeding with the specified path: 'netlify/functions'
+Apr 27, 10:13:43 PM: Starting to install dependencies
+Apr 27, 10:13:44 PM: [2mmise[0m [34mpython[0m@3.8.20   install
+Apr 27, 10:13:44 PM: [2mmise[0m [34mpython[0m@3.8.20   download cpython-3.8.20+20241002-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz
+Apr 27, 10:13:44 PM: [2mmise[0m [34mpython[0m@3.8.20   extract cpython-3.8.20+20241002-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz
+Apr 27, 10:13:45 PM: [2mmise[0m [34mpython[0m@3.8.20   python --version
+Apr 27, 10:13:45 PM: [2mmise[0m [34mpython[0m@3.8.20   Python 3.8.20
+Apr 27, 10:13:45 PM: [2mmise[0m [34mpython[0m@3.8.20 [38;5;10m✓[0m installed
+Apr 27, 10:13:45 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:45 PM: Python version set to 3.8
+Apr 27, 10:13:45 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:45 PM: Attempting Ruby version 2.7.2, read from environment
+Apr 27, 10:13:46 PM: Using Ruby version 2.7.2
+Apr 27, 10:13:46 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:46 PM: Started restoring cached go cache
+Apr 27, 10:13:46 PM: Finished restoring cached go cache
+Apr 27, 10:13:46 PM: Installing Go version 1.19.5 (requested 1.19.5)
+Apr 27, 10:13:51 PM: go version go1.19.5 linux/amd64
+Apr 27, 10:13:51 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: Using PHP version 8.0
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:52 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:53 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:13:53 PM: Attempting Node.js version '18' from .nvmrc
+Apr 27, 10:13:53 PM: Downloading and installing node v18.20.8...
+Apr 27, 10:13:54 PM: Downloading https://nodejs.org/dist/v18.20.8/node-v18.20.8-linux-x64.tar.xz...
+Apr 27, 10:13:54 PM: Computing checksum with sha256sum
+Apr 27, 10:13:54 PM: Checksums matched!
+Apr 27, 10:13:56 PM: Now using node v18.20.8 (npm v10.8.2)
+Apr 27, 10:13:56 PM: Enabling Node.js Corepack
+Apr 27, 10:13:56 PM: Started restoring cached build plugins
+Apr 27, 10:13:56 PM: Finished restoring cached build plugins
+Apr 27, 10:13:56 PM: Started restoring cached corepack dependencies
+Apr 27, 10:13:56 PM: Finished restoring cached corepack dependencies
+Apr 27, 10:13:57 PM: No npm workspaces detected
+Apr 27, 10:13:57 PM: Started restoring cached node modules
+Apr 27, 10:13:57 PM: Finished restoring cached node modules
+Apr 27, 10:13:57 PM: Installing npm packages using npm version 10.8.2
+Apr 27, 10:14:01 PM: npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+Apr 27, 10:14:01 PM: npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+Apr 27, 10:14:08 PM: added 498 packages, and audited 499 packages in 12s
+Apr 27, 10:14:08 PM: 65 packages are looking for funding
+Apr 27, 10:14:08 PM:   run `npm fund` for details
+Apr 27, 10:14:08 PM: 7 moderate severity vulnerabilities
+Apr 27, 10:14:08 PM: To address issues that do not require attention, run:
+Apr 27, 10:14:08 PM:   npm audit fix
+Apr 27, 10:14:08 PM: To address all issues (including breaking changes), run:
+Apr 27, 10:14:08 PM:   npm audit fix --force
+Apr 27, 10:14:08 PM: Run `npm audit` for details.
+Apr 27, 10:14:08 PM: npm packages installed
+Apr 27, 10:14:09 PM: Successfully installed dependencies
+Apr 27, 10:14:09 PM: Starting dev server
+Apr 27, 10:14:09 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:14:10 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:14:10 PM: mise [36m/opt/build/repo/mise.toml[0m tools: [34mpython[0m@3.8.20
+Apr 27, 10:14:13 PM: ​
+Apr 27, 10:14:13 PM: Warning: some redirects have syntax errors:
+Apr 27, 10:14:13 PM: ​
+Apr 27, 10:14:13 PM: Could not parse redirect number 2:
+Apr 27, 10:14:13 PM:   {"from":"/.netlify/functions/*","to":"/.netlify/functions/:splat","status":200}
+Apr 27, 10:14:13 PM: "path" field must not start with "/.netlify"
+Apr 27, 10:14:15 PM: ◈ Netlify Dev ◈
+Apr 27, 10:14:16 PM: ◈ Setting up local development server
+Apr 27, 10:14:24 PM: Uploading Cache of size 264.1MB
+Apr 27, 10:14:25 PM: [dev-server-plugin] listening on port 8288
+Apr 27, 10:14:26 PM: ◈ Starting Netlify Dev with Vite
+Apr 27, 10:14:26 PM: [33m⠋[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:26 PM: Adding local .netlify folder to .gitignore file...
+Apr 27, 10:14:26 PM: ◈ Redirects syntax errors:
+Apr 27, 10:14:26 PM: Could not parse redirect number 2:
+Apr 27, 10:14:26 PM:   {"from":"/.netlify/functions/*","to":"/.netlify/functions/:splat","status":200}
+Apr 27, 10:14:26 PM: "path" field must not start with "/.netlify"
+Apr 27, 10:14:26 PM:    ┌─────────────────────────────────────────────────┐
+Apr 27, 10:14:26 PM:    │                                                 │
+Apr 27, 10:14:26 PM:    │   ◈ Server now ready on http://localhost:8888   │
+Apr 27, 10:14:26 PM:    │                                                 │
+Apr 27, 10:14:26 PM:    └─────────────────────────────────────────────────┘
+Apr 27, 10:14:26 PM: [1G
+Apr 27, 10:14:26 PM: > rest-express@1.0.0 build
+Apr 27, 10:14:26 PM: > vite build && cp -r netlify/functions dist/
+Apr 27, 10:14:26 PM: [33m⠙[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:27 PM: ◈ Loaded function audio in ]8;;https://ntl.fyi/lambda-compatLambda compatibility mode]8;;
+Apr 27, 10:14:27 PM: ◈ Loaded function api in ]8;;https://ntl.fyi/lambda-compatLambda compatibility mode]8;;
+Apr 27, 10:14:27 PM: [1Gvite v5.4.14 building for production...
+Apr 27, 10:14:27 PM: [33m⠹[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:27 PM: [1Gtransforming...
+Apr 27, 10:14:27 PM: [33m⠸[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:27 PM: [1GBrowserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+Apr 27, 10:14:27 PM:   npx update-browserslist-db@latest
+Apr 27, 10:14:27 PM:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Apr 27, 10:14:27 PM: [33m⠼[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:29 PM: (node:5005) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 aborted listeners added to [IncomingMessage]. Use emitter.setMaxListeners() to increase limit
+Apr 27, 10:14:29 PM: (Use `node --trace-warnings ...` to show where the warning was created)
+Apr 27, 10:14:29 PM: (node:5005) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [IncomingMessage]. Use emitter.setMaxListeners() to increase limit
+Apr 27, 10:14:36 PM: [1G✓ 1831 modules transformed.
+Apr 27, 10:14:36 PM: [33m⠴[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:37 PM: [1Grendering chunks...
+Apr 27, 10:14:37 PM: [33m⠦[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:37 PM: [1Gcomputing gzip size...
+Apr 27, 10:14:37 PM: [33m⠧[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:37 PM: [1G../dist/public/index.html                   0.81 kB │ gzip:   0.49 kB
+Apr 27, 10:14:37 PM: [33m⠇[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:37 PM: [1G../dist/public/assets/index-5xu33H_p.css   63.94 kB │ gzip:  11.37 kB
+Apr 27, 10:14:37 PM: ../dist/public/assets/index-CCB3SebY.js   463.37 kB │ gzip: 139.27 kB
+Apr 27, 10:14:37 PM: ✓ built in 9.68s
+Apr 27, 10:14:37 PM: [33m⠏[39m Waiting for framework port 5173. This can be configured using the 'targetPort' property in the netlify.toml
+Apr 27, 10:14:37 PM: ◈ "npm run build" exited with code 0. Shutting down Netlify Dev server
+Apr 27, 10:14:37 PM: Error running command: exit status 1
+Apr 27, 10:14:37 PM: Finished processing dev server in 56.291s
+Apr 27, 10:14:37 PM: ==================================================================
+Apr 27, 10:14:37 PM:

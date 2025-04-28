@@ -1,0 +1,87 @@
+10:38:23 PM: Netlify Build                                                 
+10:38:23 PM: ────────────────────────────────────────────────────────────────
+10:38:23 PM: ​
+10:38:23 PM: ❯ Version
+10:38:23 PM:   @netlify/build 32.1.0
+10:38:23 PM: ​
+10:38:23 PM: ❯ Flags
+10:38:23 PM:   accountId: 6804b01994fa97a635daaa3d
+10:38:23 PM:   baseRelDir: true
+10:38:23 PM:   buildId: 680e9598ae8bcc0008296e1a
+10:38:23 PM:   deployId: 680e9598ae8bcc0008296e1c
+10:38:23 PM: ​
+10:38:23 PM: ❯ Current directory
+10:38:23 PM:   /opt/build/repo
+10:38:23 PM: ​
+10:38:23 PM: ❯ Config file
+10:38:23 PM:   /opt/build/repo/netlify.toml
+10:38:23 PM: ​
+10:38:23 PM: ❯ Context
+10:38:23 PM:   production
+10:38:23 PM: ​
+10:38:23 PM: build.command from netlify.toml                               
+10:38:23 PM: ────────────────────────────────────────────────────────────────
+10:38:23 PM: ​
+10:38:23 PM: $ npm run build
+10:38:23 PM: > rest-express@1.0.0 build
+10:38:23 PM: > vite build && cp -r netlify/functions dist/
+10:38:24 PM: vite v5.4.14 building for production...
+10:38:24 PM: transforming...
+10:38:24 PM: Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+10:38:24 PM:   npx update-browserslist-db@latest
+10:38:24 PM:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+10:38:24 PM: ✓ 6 modules transformed.
+10:38:24 PM: x Build failed in 707ms
+10:38:24 PM: error during build:
+10:38:24 PM: [vite:esbuild] Transform failed with 1 error:
+10:38:24 PM: /opt/build/repo/client/src/components/music/UploadModal.tsx:53:15: ERROR: Unexpected "{"
+10:38:24 PM: file: /opt/build/repo/client/src/components/music/UploadModal.tsx:53:15
+10:38:24 PM: 
+10:38:24 PM: Unexpected "{"
+10:38:24 PM: 51 |          if (album) formData.append("album", album);
+10:38:24 PM: 52 |
+10:38:24 PM: 53 |          import { API_BASE } from "@/lib/config";
+10:38:24 PM:    |                 ^
+10:38:24 PM: 54 |
+10:38:24 PM: 55 |          // Send request
+10:38:24 PM: 
+10:38:24 PM:     at failureErrorWithLog (/opt/build/repo/node_modules/vite/node_modules/esbuild/lib/main.js:1472:15)
+10:38:24 PM:     at /opt/build/repo/node_modules/vite/node_modules/esbuild/lib/main.js:755:50
+10:38:24 PM:     at responseCallbacks.<computed> (/opt/build/repo/node_modules/vite/node_modules/esbuild/lib/main.js:622:9)
+10:38:24 PM:     at handleIncomingPacket (/opt/build/repo/node_modules/vite/node_modules/esbuild/lib/main.js:677:12)
+10:38:24 PM:     at Socket.readFromStdout (/opt/build/repo/node_modules/vite/node_modules/esbuild/lib/main.js:600:7)
+10:38:24 PM:     at Socket.emit (node:events:517:28)
+10:38:24 PM:     at addChunk (node:internal/streams/readable:368:12)
+10:38:24 PM:     at readableAddChunk (node:internal/streams/readable:341:9)
+10:38:24 PM:     at Readable.push (node:internal/streams/readable:278:10)
+10:38:24 PM:     at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+10:38:24 PM: ​
+10:38:24 PM: "build.command" failed                                        
+10:38:24 PM: ────────────────────────────────────────────────────────────────
+10:38:24 PM: ​
+10:38:24 PM:   Error message
+10:38:24 PM:   Command failed with exit code 1: npm run build (https://ntl.fyi/exit-code-1)
+10:38:24 PM: ​
+10:38:24 PM:   Error location
+10:38:24 PM:   In build.command from netlify.toml:
+10:38:24 PM:   npm run build
+10:38:24 PM: ​
+10:38:24 PM:   Resolved config
+10:38:24 PM:   build:
+10:38:24 PM:     command: npm run build
+10:38:24 PM:     commandOrigin: config
+10:38:24 PM:     publish: /opt/build/repo/dist/public
+10:38:24 PM:     publishOrigin: config
+10:38:24 PM:   functionsDirectory: /opt/build/repo/netlify/functions
+10:38:24 PM:   redirects:
+10:38:25 PM:     - from: /api/*
+      status: 200
+      to: /.netlify/functions/api/:splat
+    - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+10:38:25 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+10:38:25 PM: Failing build: Failed to build site
+10:38:25 PM: Finished processing build request in 28.896s
+10:38:25 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 142 71% 45%;
+  --primary-foreground: 144 100% 11%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+
+  /* Spotify-like colors */
+  --spotify-green: 142 71% 45%;
+  --spotify-green-bright: 142 71% 50%;
+  --dark-base: 240 10% 4%;
+  --dark-surface: 240 5% 10%;
+  --dark-surface-2: 240 5% 15%;
+  --dark-surface-3: 240 5% 20%;
+  --text-primary: 0 0% 100%;
+  --text-secondary: 0 0% 70%;
+  --text-tertiary: 0 0% 42%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    @apply bg-dark-base text-text-primary;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--dark-base));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--dark-surface-3));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--text-tertiary));
+  }
+}
+
+@layer utilities {
+  .music-card:hover .play-button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .play-button {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+
+  /* Audio progress and volume sliders */
+  .audio-progress::-webkit-slider-thumb,
+  .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .audio-progress::-moz-range-thumb,
+  .volume-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+}
