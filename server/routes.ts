@@ -50,8 +50,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Create HTTP server
   const httpServer = createServer(app);
   
-  // API prefix
+  // API prefix and common headers
   const API_PREFIX = "/api";
+  
+  // Add JSON content type header to all API responses
+  app.use(API_PREFIX, (req, res, next) => {
+    res.setHeader('Content-Type', 'application/json');
+    next();
+  });
   
   // Serve audio files
   app.get(`${API_PREFIX}/audio/:filename`, async (req, res) => {
