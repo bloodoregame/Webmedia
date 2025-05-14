@@ -54,6 +54,10 @@ export const getQueryFn: <T>(options: {
     
     const res = await fetch(url, {
       credentials: "include",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      }
     });
 
     if (unauthorizedBehavior === "returnNull" && res.status === 401) {
