@@ -5,9 +5,9 @@ const isNetlify = window.location.hostname.includes('netlify.app') ||
                  window.location.hostname.includes('netlify.com');
 
 // Configuration des chemins d'API
-export const API_BASE = isNetlify 
-  ? '/.netlify/functions/api.cjs'  // Pour Netlify avec extension .cjs
-  : '/api';                       // Pour développement local
+const API_BASE = process.env.NODE_ENV === 'development' 
+  ? '/api'
+  : process.env.VITE_API_URL || '/.netlify/functions/api';
 
 // Autres configurations spécifiques à l'environnement
 export const SITE_URL = isNetlify
