@@ -146,8 +146,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
           return res.status(400).json({ message: "No file uploaded" });
         }
         
-        // Validate file
-        uploadFileSchema.parse({ file: req.file });
+        // Validate file (adaptation pour multer)
+        const file = {
+          type: req.file.mimetype,
+          size: req.file.size
+        };
+        uploadFileSchema.parse({ file });
         
         // Generate unique filename
         const fileExt = path.extname(req.file.originalname);
