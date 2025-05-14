@@ -23,7 +23,10 @@ export type Track = typeof tracks.$inferSelect;
 
 // For file upload validation
 export const uploadFileSchema = z.object({
-  file: z.instanceof(File, { message: "Please select a file" }).refine(
+  file: z.object({
+    type: z.string(),
+    size: z.number()
+  }).refine(
     (file) => {
       const validTypes = ["audio/mpeg", "audio/wav", "audio/flac"];
       return validTypes.includes(file.type);
